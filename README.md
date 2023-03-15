@@ -1,6 +1,6 @@
 # css-challenge
 
-https://100dayscss.com/days/1/ 사이트에 있는 css 문제를 직접 해결해가며 css를 자유자재로 사용할수 있도록 익히는 중입니다.
+https://100dayscss.com/days/1/ 사이트에 있는 css 문제를 해결해가며 css를 자유자재로 사용할수 있도록 익히는 중입니다.
 
 # 보러가기
 https://juhyejin.github.io/css-challenge/
