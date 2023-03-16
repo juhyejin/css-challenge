@@ -1,11 +1,14 @@
 ul{
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  flex-wrap: wrap;
+  margin: 50px auto 0px;
 }
-li{
-
+ul > li{
+  margin: 10px;
+  padding: 10px;
 }
 ul > li > a{
   color: black;
@@ -14,7 +17,6 @@ ul > li > a{
 }
 ul > li > a.btn{
   border: 1px solid;
-  margin-right: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0, .2);
 }
