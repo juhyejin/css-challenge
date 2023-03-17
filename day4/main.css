@@ -1,0 +1,73 @@
+body{
+  position: relative;
+  height: 100vh
+}
+.container{
+  width: 400px;
+  height: 400px;
+  background-color: #54cad5;
+  box-shadow: 0 0 10px rgba(0,0,0, .3);
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .circle{
+  border-radius: 50%;
+  background-color: #FFF;
+  position: absolute;
+}
+.container .circle.last-floor{
+  width: 100px;
+  height: 100px;
+  animation: last-floor-animation 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+.container .circle.middle-floor {
+  width: 60px;
+  height: 60px;
+  animation: middle-floor-animation 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+
+}
+.container .circle.first-floor {
+  width: 30px;
+  height: 30px;
+  transition: .4s;
+  animation: first-floor-animation 2s cubic-bezier(.21,.98,.6,.99) infinite alternate;
+}
+
+@keyframes last-floor-animation {
+  0%, 10%{
+    transform: scale(0);
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+  }
+  100%{
+    transform: scale(1);
+    box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+
+  }
+}
+@keyframes middle-floor-animation {
+  0%, 40%{
+    transform: scale(0);
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+  }
+  100%{
+    transform: scale(1);
+    box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+  }
+}
+
+@keyframes first-floor-animation {
+  0%, 70%{
+    transform: scale(0);
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+  }
+  100%{
+    transform: scale(1);
+    box-shadow: 5px 6px 10px 2px rgba(0,0,0,.4);
+  }
+}
