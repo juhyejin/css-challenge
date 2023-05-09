@@ -1,0 +1,159 @@
+.main-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  background: #465d76;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 2px 2px 6px 2px rgba(0 0 0 / 40%);
+
+}
+.main-container .main-card{
+  background: #FFF;
+  width: 300px;
+  height: 300px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 6px 2px rgba(0 0 0 / 40%);
+  position: relative;
+  transition: .6s ease-in-out;
+  z-index: 1;
+}
+.main-container .main-card.active {
+  transform: translateX(50%);
+}
+.main-container .main-card .app-bar{
+  height: 50px;
+  background-color: #75a8d0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFF;
+}
+.main-container .main-card .app-bar .menu-icon{
+  position: relative;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  cursor: pointer;
+}
+.main-container .main-card .app-bar .menu-icon > div {
+  transition: .2s ease-in-out;
+}
+.main-container .main-card .app-bar .menu-icon:hover > div {
+  background-color: #FFF;
+}
+.main-container .main-card .app-bar .menu-icon .dash-top{
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background: #a8cfe6;
+  margin-bottom: 10px;
+}
+.main-container .main-card .app-bar .menu-icon .circle{
+  height: 7px;
+  width: 7px;
+  background: #a8cfe6;
+  border-radius: 50%;
+  border: 1px #75a8d0 solid;
+  position: absolute;
+  top:-2px;
+  right: 0;
+}
+.main-container .main-card .app-bar .menu-icon .dash-bottom{
+  height: 3px;
+  border-radius: 3px;
+  background: #a8cfe6;
+  width: 100%;
+}
+.main-container .main-card .app-bar .search-icon{
+  position: relative;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  cursor: pointer;
+}
+.main-container .main-card .app-bar .search-icon > div{
+  transition: .2s ease-in-out;
+}
+.main-container .main-card .app-bar .search-icon:hover > .circle {
+  border-color: #FFF;
+}
+.main-container .main-card .app-bar .search-icon:hover > .dash {
+  background-color: #FFF;
+}
+.main-container .main-card .app-bar .search-icon .circle{
+  height: 10px;
+  width: 10px;
+  background: #75a8d0;
+  border-radius: 50%;
+  margin-top: 5px;
+  border: 3px #a8cfe6 solid;
+}
+.main-container .main-card .app-bar .search-icon .dash{
+  height: 3px;
+  border-radius: 3px;
+  background: #a8cfe6;
+  width: 8px;
+  position: absolute;
+  bottom: 8px;
+  right: 3px;
+  transform: rotate(45deg);
+}
+
+.main-container .main-card .app-bar input {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 200px;
+  right: 20px;
+  border-radius: 15px;
+  outline: none;
+  border: 0;
+  box-shadow: 0 0 3px 0 rgba(0,0,0, .4);
+  padding: 5px 10px;
+  transition: .4s ease-in-out;
+}
+.main-container .main-card .app-bar input.active {
+  visibility: visible;
+  right: 60px;
+  opacity: 1;
+}
+.menu{
+  width: 120px;
+  height: 280px;
+  background: #5d6b81;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: .7s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #8299aa;
+  box-shadow: 2px 3px 6px 0 rgba(0,0,0, .4);
+  border-radius: 4px;
+}
+.menu.show-menu{
+  transform: translate(-90%, -50%);
+  z-index: -1;
+}
+
+.menu ul li{
+  padding: 15px;
+  transition: .2s ease-in-out;
+}
+.menu ul li:hover{
+  background: #2c4d64;
+  color: #FFF;
+}
