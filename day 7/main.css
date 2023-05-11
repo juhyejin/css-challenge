@@ -157,3 +157,56 @@
   background: #2c4d64;
   color: #FFF;
 }
+
+.main-container .main-card .contents{
+  position: relative;
+  height: calc(100% - 50px);
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-container .main-card .contents .line{
+  position: absolute;
+  height: 100%;
+  width: 3px;
+  background: #d9d9d9;
+  top: 0;
+  left: 20px;
+  z-index: -1;
+}
+.main-container .main-card .contents .description{
+  position: relative;
+  color: #7b7b7b;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+.main-container .main-card .contents .description:hover span {
+  color: #a8cfe6;
+}
+.main-container .main-card .contents .description .circle{
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -2px;
+  left: -4px;
+  border-radius: 50%;
+  background: #FFF;
+  border: 2px solid #a8cfe6;
+  outline: 3px solid #FFF;
+}
+.main-container .main-card .contents .description span{
+  display: block;
+}
+.main-container .main-card .contents .description span.time{
+  font-size: 10px;
+}
+.main-container .main-card .contents .description b {
+  font-weight: bold;
+}
+
