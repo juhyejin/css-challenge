@@ -1,0 +1,131 @@
+.main-container{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 1px 4px 10px 0 rgba(0,0,0,.2);
+}
+.main-container .main-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .main-card .weather-section{
+  background: #20213f;
+  height: 320px;
+  position: relative;
+  overflow: hidden;
+}
+.main-container .main-card .weather-section .ground{
+  position: absolute;
+  border-radius: 50%;
+}
+.main-container .main-card .weather-section > div.ground:nth-child(-n+5){
+  background: #2c3551;
+}
+.main-container .main-card .weather-section > div.ground:nth-child(n+5) {
+  background: #3b415f;
+}
+.main-container .main-card .weather-section .ground1{
+  width: 300px;
+  height: 300px;
+  bottom: -60%;
+  left: -10%;
+}
+.main-container .main-card .weather-section .ground2 {
+  width: 300px;
+  height: 300px;
+  bottom: -60%;
+  right: -30%;
+}
+.main-container .main-card .weather-section .ground3 {
+  width: 250px;
+  height: 100px;
+  bottom: -15%;
+  left: -10%;
+}
+.main-container .main-card .weather-section .ground4 {
+  width: 300px;
+  height: 300px;
+  bottom: -70%;
+  left: 20%;
+}
+.main-container .main-card .weather-section .ground5 {
+  width: 300px;
+  height: 200px;
+  bottom: -40%;
+  right: -50%;
+}
+
+.main-container .main-card .weather-section .moon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  background: #fff8c1;
+  box-shadow: 0 0 12px 6px rgba(255,248,193,.5);
+  top: 35px;
+  left: 60px;
+  overflow: hidden;
+  animation: moon-up 1.5s ease-in-out;
+}
+@keyframes moon-up {
+  from {
+    transform: translate(-50%, 260%);
+  }
+  to{
+    transform: translate(0,0);
+  }
+}
+.main-container .main-card .weather-section .moon .crater {
+  border-radius: 50%;
+  background: #f3eab5;
+  position: absolute;
+}
+.main-container .main-card .weather-section .moon .crater1 {
+  width: 10px;
+  height: 10px;
+  top: 30px;
+  right: 10px;
+}
+.main-container .main-card .weather-section .moon .crater2 {
+  width: 20px;
+  height: 20px;
+  top:30px;
+  left: 0;
+}
+.main-container .main-card .weather-section .moon .crater3 {
+  width: 16px;
+  height: 16px;
+  top: 15px;
+  left: 30px;
+}
+.main-container .main-card .weather-section .moon .crater4 {
+  width: 7px;
+  height: 7px;
+  bottom: 20px;
+  right: 15px;
+}
+.main-container .main-card .weather-section .moon .crater5 {
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+}
+.main-container .main-card .weather-section .moon .crater6 {
+  width: 8px;
+  height: 8px;
+  bottom: 10px;
+  left: 15px;
+}
+.main-container .main-card .weather-section .moon .crater7 {
+  width: 11px;
+  height: 11px;
+  bottom: 10px;
+  right: 30px;
+}
+.main-container .main-card .weather-description{
+  height: 80px;
+}
