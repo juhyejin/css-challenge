@@ -1,0 +1,85 @@
+.main-container{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 1px 4px 10px 0 rgba(0,0,0,.2);
+  background: #5a5b64;
+}
+.main-container .main-card{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-card .out-circle{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #4a4b53
+}
+.main-container .main-card .out-circle .main-circle{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #2c2c2e;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .main-card .out-circle .main-circle svg{
+  stroke-dasharray: 500;
+  animation: spinner 5s linear infinite;
+  transform-origin: center center;
+  transform: rotate(-90deg);
+}
+.main-container .main-card .out-circle .main-circle .dash-circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px dotted #FFF;
+  position: absolute;
+}
+.main-container .main-card .out-circle .data {
+  position: absolute;
+  color: #FFF;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.main-container .main-card .out-circle .data p.date {
+  font-size: 13px;
+}
+.main-container .main-card .out-circle .data p.time {
+  font-size: 45px;
+  font-weight: bold;
+}
+.main-container .main-card .out-circle .data p.health {
+  font-size: 13px;
+}
+
+@keyframes spinner {
+  from {
+    stroke-dashoffset: 500;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50% {
+    stroke-dashoffset: 0;
+    transform: rotate(-90deg) scaleY(1);
+  }
+  50.001% {
+    transform: rotate(-90deg) scaleY(-1);
+  }
+  to {
+    stroke-dashoffset: 500;
+    transform: rotate(-90deg) scaleY(-1);
+  }
+}
