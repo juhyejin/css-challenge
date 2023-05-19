@@ -12,3 +12,4 @@ https://juhyejin.github.io/css-challenge/
 * <a href="https://github.com/juhyejin/css-challenge/tree/main/day5#readme">day5</a>
 * <a href="https://github.com/juhyejin/css-challenge/tree/main/day6#readme">day6</a>
 * <a href="https://github.com/juhyejin/css-challenge/tree/main/day7#readme">day7</a>
+* <a href="https://github.com/juhyejin/css-challenge/tree/main/day8#readme">day7</a>
