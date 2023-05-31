@@ -1,0 +1,39 @@
+.main-container{
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+}
+.main-card{
+  height: 100%;
+}
+.main-container .main-card .top-contents{
+  height: 250px;
+  background: radial-gradient( #f3eab5, #ffc579);
+  position: relative;
+}
+.main-container .main-card .floor-contents {
+  height: 150px;
+  background: #2c2c2e;
+}
+.main-container .main-card .top-contents .left,
+.main-container .main-card .top-contents .right {
+  position: absolute;
+  bottom: 0;
+  left: 147px;
+  transform-origin: 50% 0;
+}
+.main-container .main-card .top-contents .right{
+}
+.main-container .main-card .top-contents .left{
+  transform: rotate(45deg);
+}
+
+.main-container .main-card .top-contents .shoe{
+  width: 150px;
+  height: 130px;
+  background: url('https://100dayscss.com/codepen/doc-martens.svg') center center no-repeat;;
+}
